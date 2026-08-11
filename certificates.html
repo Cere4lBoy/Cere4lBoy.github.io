@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/icon.png" type="image/png">
+    <title>Certificates - Iman</title>
+    <style>
+        body { background: #000; color: #00ff00; font-family: 'Consolas', monospace; margin: 0; padding: 2rem; }
+        a { color: #00ff00; text-decoration: none; }
+        .page-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-link {
+            color: #00ff00;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .button { display: inline-block; margin-bottom: 2rem; color: #000; background: #00ff00; padding: 0.75rem 1.2rem; border-radius: 999px; text-decoration: none; }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .site-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: brightness(0) saturate(100%) invert(100%);
+        }
+        .page-title { margin-bottom: 1.2rem; font-size: 1.8rem; }
+        .page-subtitle { color: #aaaaaa; margin-bottom: 1.5rem; line-height: 1.6; }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.2rem;
+        }
+        .cert-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(0,255,0,0.2);
+            border-radius: 1rem;
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            min-height: 220px;
+        }
+        .issuer-box {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .issuer-logo {
+            width: 46px;
+            height: 46px;
+            border-radius: 0.7rem;
+            background: linear-gradient(135deg, rgba(0,255,0,0.15), rgba(255,255,255,0.06));
+            border: 1px solid rgba(0,255,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ff00;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .cert-name { font-size: 1.05rem; font-weight: bold; }
+        .cert-meta { color: #aaaaaa; font-size: 0.95rem; }
+        .view-btn {
+            display: inline-block;
+            margin-top: auto;
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            background: transparent;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            text-align: center;
+            width: fit-content;
+        }
+        .view-btn:hover { background: rgba(0,255,0,0.12); }
+        @media (max-width: 900px) {
+            .cert-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .container { max-width: 100%; padding: 0 0.5rem; }
+            .button { width: 100%; box-sizing: border-box; text-align: center; }
+            .page-nav { gap: 0.75rem; padding-bottom: 0.75rem; }
+            .view-btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img class="site-logo" src="Assets/cerealicon.png" alt="Cereal icon placeholder">
+    </div>
+    <nav class="page-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="volunteer.html">Volunteer</a>
+        <a class="nav-link" href="academic.html">Academic_Progress</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="certificates.html">Certificates</a>
+    </nav>
+    <div class="container">
+        <a class="button" href="index.html">Back to Landing Page</a>
+        <h1 class="page-title">Certificates</h1>
+
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">
+                        <img src="Assets/huawei.png" alt="Huawei logo" style="width:100%; height:100%; object-fit:contain; border-radius:0.7rem;">
+                    </div>
+                    <div>
+                        <div class="cert-name">HCIA OpenGauss V1.0</div>
+                        <div class="cert-meta">Huawei</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 25/03/2025</div>
+                <div class="cert-meta">Industry: Computer Science - Database</div>
+                <a class="view-btn" href="Assets/Certificates/HuaweiDatabaseCertificate.png">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>           
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+    
+            <div class="cert-card">
+                <div class="issuer-box">
+                    <div class="issuer-logo">LOGO</div>
+                    <div>
+                        <div class="cert-name">Certificate Name</div>
+                        <div class="cert-meta">Issuer Company</div>
+                    </div>
+                </div>
+                <div class="cert-meta">Date Issued: 00/00/0000</div>
+                <div class="cert-meta">Industry: Nil</div>
+                <a class="view-btn" href="#">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

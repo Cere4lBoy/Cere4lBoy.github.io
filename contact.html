@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/icon.png" type="image/png">
+    <title>Contact - Iman</title>
+    <style>
+        body { background: #000; color: #00ff00; font-family: 'Consolas', monospace; margin: 0; padding: 2rem; }
+        a { color: #00ff00; text-decoration: none; }
+        .page-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-link {
+            color: #00ff00;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .button { display: inline-block; margin-bottom: 2rem; color: #000; background: #00ff00; padding: 0.75rem 1.2rem; border-radius: 999px; text-decoration: none; }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .site-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: brightness(0) saturate(100%) invert(100%);
+        }
+        .contact-card {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 1.5rem;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(0,255,0,0.2);
+            border-radius: 1.2rem;
+            padding: 1.5rem;
+            align-items: center;
+        }
+        .photo-placeholder {
+            width: 220px;
+            height: 300px;
+            border-radius: 1rem;
+            border: 1px dashed rgba(0,255,0,0.4);
+            background: linear-gradient(135deg, rgba(0,255,0,0.12), rgba(255,255,255,0.04));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        .details h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
+        }
+        .details p {
+            color: #aaaaaa;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .info-item {
+            background: rgba(0,0,0,0.25);
+            padding: 0.9rem 1rem;
+            border-radius: 0.8rem;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .info-item strong { display: block; margin-bottom: 0.2rem; color: #ffffff; }
+        .social-link { color: #00ff00; text-decoration: none; }
+        .social-link:hover { text-decoration: underline; }
+        @media (max-width: 760px) {
+            .contact-card { grid-template-columns: 1fr; }
+            .photo-placeholder { width: 100%; max-width: 260px; height: 340px; margin: 0 auto; }
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .container { max-width: 100%; padding: 0 0.5rem; }
+            .button { width: 100%; box-sizing: border-box; text-align: center; }
+            .page-nav { gap: 0.75rem; padding-bottom: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img class="site-logo" src="Assets/cerealicon.png" alt="Cereal icon placeholder">
+    </div>
+    <nav class="page-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="volunteer.html">Volunteer</a>
+        <a class="nav-link" href="academic.html">Academic_Progress</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="certificates.html">Certificates</a>
+    </nav>
+    <div class="container">
+        <a class="button" href="index.html">Back to Landing Page</a>
+        <div class="contact-card">
+            <div class="photo-placeholder">
+                <img src="Assets/iman.JPG" alt="Iman portrait">
+            </div>
+            <div class="details">
+                <h1>IMAN THAQIF BIN NASARUDDIN</h1>
+                <p>Data Science student and aspiring technology professional open to opportunities in analytics, machine learning, and product-focused development.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <strong>Email</strong>
+                        <a class="social-link" href="mailto:imanthaqifn@gmail.com">imanthaqifn@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>LinkedIn</strong>
+                        <a class="social-link" href="https://www.linkedin.com/in/imanthaqif" target="_blank" rel="noopener noreferrer">linkedin.com/in/imanthaqif</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Instagram</strong>
+                        <a class="social-link" href="https://www.instagram.com/imannthaqiff" target="_blank" rel="noopener noreferrer">@imannthaqiff</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
